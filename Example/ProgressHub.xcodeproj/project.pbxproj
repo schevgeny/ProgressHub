@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		0115F30E4965CEC382088770 /* Pods-ProgressHub_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHub_Example.debug.xcconfig"; path = "Target Support Files/Pods-ProgressHub_Example/Pods-ProgressHub_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3C5D057ED1147D201029F41F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3C5D057ED1147D201029F41F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ProgressHub_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressHub_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +41,9 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		84393677ECE5292B1E76AFDC /* Pods_ProgressHub_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressHub_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		873A0922979B04F6DBCA6AD1 /* ProgressHub.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ProgressHub.podspec; path = ../ProgressHub.podspec; sourceTree = "<group>"; };
+		873A0922979B04F6DBCA6AD1 /* ProgressHub.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ProgressHub.podspec; path = ../ProgressHub.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98A1FE1649A362FE6C915994 /* Pods-ProgressHub_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHub_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ProgressHub_Tests/Pods-ProgressHub_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E80B9C354CAE1265BA83654C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		E80B9C354CAE1265BA83654C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F04B4905991E69A1EA6BFD80 /* Pods-ProgressHub_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHub_Tests.release.xcconfig"; path = "Target Support Files/Pods-ProgressHub_Tests/Pods-ProgressHub_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F1EA52EFD85B2E07F800F16F /* Pods-ProgressHub_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHub_Example.release.xcconfig"; path = "Target Support Files/Pods-ProgressHub_Example/Pods-ProgressHub_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB242656EE9927E52122C220 /* Pods_ProgressHub_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProgressHub_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,7 +156,6 @@
 				98A1FE1649A362FE6C915994 /* Pods-ProgressHub_Tests.debug.xcconfig */,
 				F04B4905991E69A1EA6BFD80 /* Pods-ProgressHub_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +313,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ProgressHub_Example/Pods-ProgressHub_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressHub/ProgressHub.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHub.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
