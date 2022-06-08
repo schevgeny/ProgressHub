@@ -15,13 +15,12 @@ open class SCHProgressHUB {
     static var contentView = UIView(frame: CGRect(x: 0, y: 0, width: 100, height: 100))
     static var activityIndicatorType: Int { (Bundle.main.infoDictionary?["activityIndicatorType"] as? Int) ?? 0 } 
     
-    static func showAdded(to: UIView, type: NVActivityIndicatorType, color: UIColor){
+    open class func showAdded(to: UIView, type: NVActivityIndicatorType, color: UIColor){
         activityIndicatorView?.stopAnimating()
         activityIndicatorView = NVActivityIndicatorView(frame: frame, type: type)
         hide(animated: false)
         guard let activityIndicatorView = self.activityIndicatorView else { return }
-        SCHProgressHUB.contentView.alpha = 1
-        contentView.layer.cornerRadius = 10
+ 
         contentView.backgroundColor = .black
         contentView.alpha = 0.5
         contentView.frame.origin = to.frame.origin
