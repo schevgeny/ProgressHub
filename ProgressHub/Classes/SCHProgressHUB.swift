@@ -44,7 +44,7 @@ open class SCHProgressHUB {
         SCHProgressHUB.showAdded(to: to, type: NVActivityIndicatorType.allCases[activityIndicatorType], color: .white)
     }
     
-    static func hide(animated: Bool) {
+    open class func hide(animated: Bool) {
         if animated {
             UIView.animate(withDuration: 0.4) {
                 SCHProgressHUB.contentView.alpha = 0
