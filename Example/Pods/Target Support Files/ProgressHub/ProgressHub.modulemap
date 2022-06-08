@@ -1,0 +1,6 @@
+framework module ProgressHub {
+  umbrella header "ProgressHub-umbrella.h"
+
+  export *
+  module * { export * }
+}
